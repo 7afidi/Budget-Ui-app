@@ -1,22 +1,8 @@
+import 'package:budget_ui_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
-void main() =>
-    runApp(MaterialApp(home: MyApp(), debugShowCheckedModeBanner: false));
-
-class MyApp extends StatefulWidget {
-  MyApp({Key key}) : super(key: key);
-
-  @override
-  _MyAppState createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Budget App"),
-      ),
-    );
-  }
-}
+void main() => runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(primaryColor: Color(0XFF16a085)),
+      home: HomeScreen(),
+    ));
